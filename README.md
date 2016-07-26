@@ -33,6 +33,9 @@ Listeners can be registered either in the JDABuilder (will catch all Events; rec
 
 #### Examples:
 ```java
+import net.dv8tion.jda.events.Event;
+import net.dv8tion.jda.events.ReadyEvent;
+import net.dv8tion.jda.hooks.EventListener;
 public class ReadyListener implements EventListener
 {
     public static void main(String[] args)
@@ -50,6 +53,8 @@ public class ReadyListener implements EventListener
 ```
 
 ```java
+import net.dv8tion.jda.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.hooks.ListenerAdapter;
 public class MessageListener extends ListenerAdapter
 {
     public static void main(String[] args)
